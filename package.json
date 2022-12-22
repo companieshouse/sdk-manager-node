@@ -1,0 +1,35 @@
+{
+  "name": "sdk-manager-node",
+  "version": "0.0.1",
+  "description": "Library to manage interactions with APIs by initialising an SDK with an authenticated HTTP Client.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint 'src/*.ts' 'src/**/*.ts' 'test/**/*.ts'",
+    "prepublishOnly": "[ ! -d node_modules ] && npm install; tsc",
+    "postpublish": "rm -rf dist",
+    "analyse-code": "sonar-scanner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/companieshouse/sdk-manager-node.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "sonarqube-scanner": "^2.8.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/companieshouse/sdk-manager-node/issues"
+  },
+  "homepage": "https://github.com/companieshouse/sdk-manager-node#readme"
+}
