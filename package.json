@@ -17,7 +17,11 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@companieshouse/api-sdk-node": "^2.0.46",
+    "@companieshouse/node-session-handler": "^4.1.6",
+    "private-api-sdk-node": "git+ssh://git@github.com/companieshouse/private-api-sdk-node.git#0.1.64"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
