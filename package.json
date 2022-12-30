@@ -7,8 +7,6 @@
     "build": "tsc",
     "test": "jest",
     "lint": "eslint 'src/*.ts' 'src/**/*.ts' 'test/**/*.ts'",
-    "prepublishOnly": "[ ! -d node_modules ] && npm install; tsc",
-    "postpublish": "rm -rf dist",
     "analyse-code": "sonar-scanner"
   },
   "repository": {
